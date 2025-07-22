@@ -1,32 +1,33 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { COLORS, FONTS } from '../constants/theme.js';
-import { Button } from "../components/ui/react/button-test.js";
+import { Button } from '../components/ui/react/button-test.js';
 ---
 
 <Layout title="Hello World">
-  <main class="mx-auto p-6 max-w-prose text-center">
-    <h1 class="text-5xl font-extrabold m-0 text-primary font-heading">Hello World</h1>
-    <p class="font-sans text-lg mt-2">¡Bienvenido a mi sitio Astro!</p>
-    
+  <main class="mx-auto max-w-prose p-6 text-center">
+    <h1 class="text-primary font-heading m-0 text-5xl font-extrabold">
+      Hello World
+    </h1>
+    <p class="mt-2 font-sans text-lg">¡Bienvenido a mi sitio Astro!</p>
+
     <!-- Ejemplo de uso de colores personalizados -->
     <div class="mt-8 flex flex-col gap-4">
-      <div class="p-4 bg-primary text-white rounded-lg">
+      <div class="bg-primary rounded-lg p-4 text-white">
         <p class="font-sans">Este es un ejemplo usando el color primario</p>
       </div>
-      <div class="p-4 bg-secondary text-white rounded-lg">
+      <div class="bg-secondary rounded-lg p-4 text-white">
         <p class="font-sans">Este es un ejemplo usando el color secundario</p>
       </div>
-      <div class="p-4 bg-accent text-white rounded-lg">
+      <div class="bg-accent rounded-lg p-4 text-white">
         <p class="font-sans">Este es un ejemplo usando el color de acento</p>
       </div>
-      <Button variant='secondary'>Click me</Button>
+      <Button variant="secondary">Click me</Button>
     </div>
-    
+
     <!-- Ejemplo de uso de fuentes personalizadas -->
-    <div class="mt-8 text-left p-4 bg-background-alt rounded-lg">
-      <p class="font-sans text-xl mb-2">Fuente Sans (Poppins)</p>
-      <p class="font-heading text-xl mb-2">Fuente Heading (Montserrat)</p>
+    <div class="bg-background-alt mt-8 rounded-lg p-4 text-left">
+      <p class="mb-2 font-sans text-xl">Fuente Sans (Poppins)</p>
+      <p class="font-heading mb-2 text-xl">Fuente Heading (Montserrat)</p>
       <p class="font-mono text-xl">Fuente Mono (Fira Code)</p>
     </div>
   </main>

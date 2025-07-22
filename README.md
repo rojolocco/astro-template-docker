@@ -12,6 +12,10 @@ Un template profesional y moderno para proyectos web con **Astro**, **React**, *
 - **🔍 SEO Optimizado** - Meta tags completos y estructura semántica
 - **♿ Accesible** - Componentes siguiendo las mejores prácticas de accesibilidad
 - **🎯 Performance** - Carga rápida y optimizada
+- **🔧 ESLint & Prettier** - Linting y formateo automático de código
+- **🪝 Husky** - Git hooks para calidad de código automática
+- **📦 Pnpm** - Gestor de paquetes rápido y eficiente
+- **🐳 Docker** - Contenedorización completa para desarrollo y producción
 
 ## 📁 Estructura del Proyecto
 
@@ -73,13 +77,84 @@ Un template profesional y moderno para proyectos web con **Astro**, **React**, *
 ## 📜 Scripts Disponibles
 
 ```bash
+# Desarrollo
 pnpm dev          # Inicia el servidor de desarrollo
-pnpm build        # Construye la aplicación para producción
 pnpm preview      # Vista previa de la build de producción
+
+# Build y Deploy
+pnpm build        # Construye la aplicación para producción
 pnpm astro        # Comandos CLI de Astro
+
+# Calidad de Código
+pnpm lint         # Ejecuta ESLint para encontrar problemas
+pnpm lint:fix     # Ejecuta ESLint y corrige problemas automáticamente
+pnpm format       # Formatea el código con Prettier
+pnpm format:check # Verifica el formato del código sin cambios
+pnpm type-check   # Verifica tipos TypeScript sin generar archivos
+pnpm check        # Verificación completa de Astro
 ```
 
-## 🔧 Configuración
+## �️ Desarrollo
+
+### Herramientas de Calidad de Código
+
+Este template viene preconfigurado con herramientas profesionales para mantener la calidad del código:
+
+#### ESLint
+
+- **Configuración**: `eslint.config.js`
+- **Plugins incluidos**:
+  - `@typescript-eslint` - Reglas para TypeScript
+  - `eslint-plugin-react` - Reglas para React
+  - `eslint-plugin-react-hooks` - Reglas para React Hooks
+  - `eslint-plugin-jsx-a11y` - Reglas de accesibilidad
+  - `eslint-plugin-astro` - Reglas específicas para Astro
+
+#### Prettier
+
+- **Configuración**: `.prettierrc`
+- **Plugins incluidos**:
+  - `prettier-plugin-astro` - Formato para archivos .astro
+  - `prettier-plugin-tailwindcss` - Ordenamiento de clases Tailwind
+
+#### Husky + lint-staged
+
+- **Pre-commit hooks** automáticos que ejecutan:
+  - ESLint con corrección automática
+  - Prettier para formateo
+  - Solo en archivos modificados (gracias a lint-staged)
+
+### Flujo de Desarrollo Recomendado
+
+1. **Clona y configura**:
+
+   ```bash
+   git clone <tu-repo>
+   cd astro-template-docker
+   pnpm install
+   ```
+
+2. **Desarrolla con calidad**:
+
+   ```bash
+   pnpm dev          # Servidor de desarrollo
+   pnpm lint         # Revisa tu código
+   pnpm format       # Formatea antes de commit
+   ```
+
+3. **Los hooks automáticos** se encargan del resto al hacer commit
+
+### Extensiones Recomendadas de VS Code
+
+El archivo `.vscode/extensions.json` incluye extensiones recomendadas:
+
+- **Astro** - Soporte completo para archivos .astro
+- **Prettier** - Formateo automático
+- **ESLint** - Linting en tiempo real
+- **Tailwind CSS IntelliSense** - Autocompletado de clases
+- **TypeScript Hero** - Herramientas adicionales de TypeScript
+
+## �🔧 Configuración
 
 ### Personalizar el sitio
 
@@ -145,14 +220,14 @@ El template incluye:
 
 ## 📦 Tecnologías Utilizadas
 
-| Tecnología | Versión | Propósito |
-|------------|---------|-----------|
-| Astro | 5.12.1 | Framework principal |
-| React | 19.1.0 | Componentes interactivos |
-| TypeScript | Latest | Tipado estático |
-| Tailwind CSS | 4.1.11 | Estilos |
-| clsx | 2.1.1 | Manejo de clases CSS |
-| tailwind-merge | 3.3.1 | Combinación de clases |
+| Tecnología     | Versión | Propósito                |
+| -------------- | ------- | ------------------------ |
+| Astro          | 5.12.1  | Framework principal      |
+| React          | 19.1.0  | Componentes interactivos |
+| TypeScript     | Latest  | Tipado estático          |
+| Tailwind CSS   | 4.1.11  | Estilos                  |
+| clsx           | 2.1.1   | Manejo de clases CSS     |
+| tailwind-merge | 3.3.1   | Combinación de clases    |
 
 ## 🚀 Despliegue
 

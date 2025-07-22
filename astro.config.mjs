@@ -6,29 +6,27 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: 'http://localhost:3000',
-  integrations: [
-    react()
-  ],
-  
+  integrations: [react()],
+
   vite: {
     plugins: [tailwindcss()],
     define: {
       global: 'globalThis',
     },
     optimizeDeps: {
-      include: ['react', 'react-dom', 'react/jsx-runtime']
-    }
+      include: ['react', 'react-dom', 'react/jsx-runtime'],
+    },
   },
-  
+
   // Configuración de desarrollo
   server: {
     port: 3000,
-    host: true
+    host: true,
   },
-  
+
   // Configuración de build
   build: {
     assets: 'assets',
-    inlineStylesheets: 'auto'
-  }
+    inlineStylesheets: 'auto',
+  },
 });

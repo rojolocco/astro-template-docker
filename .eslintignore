@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.astro/
+
+# Cache
+.cache/
+
+# Environment files
+.env*
+
+# Config files
+*.config.js
+*.config.mjs
+*.config.ts
