@@ -1,1 +1,46 @@
 @import "tailwindcss";
+
+:root {
+  /* Colores principales */
+  --color-primary: #3B82F6;
+  --color-secondary: #10B981;
+  --color-accent: #F59E0B;
+  --color-text: #1F2937;
+  --color-text-light: #6B7280;
+  --color-background: #FFFFFF;
+  --color-background-alt: #F9FAFB;
+  
+  /* Tipografía */
+  --font-sans: 'Poppins', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+}
+
+/* Aplicación global de fuentes */
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}
+
+/* Clases de utilidad para colores y fuentes */
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-accent { color: var(--color-accent); }
+
+.bg-primary { background-color: var(--color-primary); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-accent { background-color: var(--color-accent); }
+
+.font-sans { font-family: var(--font-sans); }
+.font-heading { font-family: var(--font-heading); }
+.font-mono { font-family: var(--font-mono); }

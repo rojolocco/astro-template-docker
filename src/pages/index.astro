@@ -1,10 +1,40 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { COLORS, FONTS } from '../constants/theme.js';
+import { Button } from "../components/ui/button-test";
 ---
 
 <Layout title="Hello World">
   <main class="mx-auto p-6 max-w-prose text-center">
-    <h1 class="text-5xl font-extrabold m-0">Hello World</h1>
-    <p>¡Bienvenido a mi sitio Astro!</p>
+    <h1 class="text-5xl font-extrabold m-0 text-primary font-heading">Hello World</h1>
+    <p class="font-sans text-lg mt-2">¡Bienvenido a mi sitio Astro!</p>
+    
+    <!-- Ejemplo de uso de colores personalizados -->
+    <div class="mt-8 flex flex-col gap-4">
+      <div class="p-4 bg-primary text-white rounded-lg">
+        <p class="font-sans">Este es un ejemplo usando el color primario</p>
+      </div>
+      <div class="p-4 bg-secondary text-white rounded-lg">
+        <p class="font-sans">Este es un ejemplo usando el color secundario</p>
+      </div>
+      <div class="p-4 bg-accent text-white rounded-lg">
+        <p class="font-sans">Este es un ejemplo usando el color de acento</p>
+      </div>
+      <Button variant='secondary'>Click me</Button>
+    </div>
+    
+    <!-- Ejemplo de uso de fuentes personalizadas -->
+    <div class="mt-8 text-left p-4 bg-background-alt rounded-lg">
+      <p class="font-sans text-xl mb-2">Fuente Sans (Poppins)</p>
+      <p class="font-heading text-xl mb-2">Fuente Heading (Montserrat)</p>
+      <p class="font-mono text-xl">Fuente Mono (Fira Code)</p>
+    </div>
   </main>
 </Layout>
+
+<style>
+  /* Puedes añadir estilos específicos de este componente aquí */
+  .bg-background-alt {
+    background-color: var(--color-background-alt);
+  }
+</style>
