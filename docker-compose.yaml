@@ -1,0 +1,16 @@
+services:
+  astro-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: astro-template-docker:latest
+    container_name: astro-template
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    networks:
+      - traefik_network
+
+networks:
+  traefik_network:
+    driver: bridge
