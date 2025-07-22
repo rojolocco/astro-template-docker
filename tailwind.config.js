@@ -5,10 +5,10 @@ export default {
     extend: {
       colors: {
         // Tres colores principales
-        primary: '#3B82F6', // Azul
-        secondary: '#10B981', // Verde
-        accent: '#F59E0B', // Ámbar
-        text: '#1F2937', // Texto oscuro
+        primary: '#FFFFFF', // Blanco
+        secondary: '#2563EB', // Azul
+        accent: '#000000', // Negro
+        text: '#000000', // Texto negro
         background: '#FFFFFF', // Fondo blanco
       },
       fontFamily: {

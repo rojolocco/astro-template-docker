@@ -3,32 +3,55 @@ import Layout from '../layouts/Layout.astro';
 import { Button } from '../components/ui/react/button-test.js';
 ---
 
-<Layout title="Hello World">
+<Layout title="Astro Template Docker">
   <main class="mx-auto max-w-prose p-6 text-center">
     <h1 class="text-primary font-heading m-0 text-5xl font-extrabold">
-      Hello World
+      Astro Template Docker
     </h1>
-    <p class="mt-2 font-sans text-lg">¡Bienvenido a mi sitio Astro!</p>
+    <p class="mt-2 font-sans text-lg">
+      Template para desarrollo web con Astro y Docker
+    </p>
 
-    <!-- Ejemplo de uso de colores personalizados -->
+    <!-- Descripción del template -->
     <div class="mt-8 flex flex-col gap-4">
-      <div class="bg-primary rounded-lg p-4 text-white">
-        <p class="font-sans">Este es un ejemplo usando el color primario</p>
+      <div class="bg-primary rounded-lg border border-gray-200 p-4 text-black">
+        <p class="font-sans font-bold">
+          ✨ Template para desarrollo profesional con Astro
+        </p>
+        <p class="mt-2 font-sans">
+          Configurado con Docker para desarrollo y producción
+        </p>
       </div>
       <div class="bg-secondary rounded-lg p-4 text-white">
-        <p class="font-sans">Este es un ejemplo usando el color secundario</p>
+        <p class="font-sans font-bold">🎨 Incluye:</p>
+        <p class="mt-2 font-sans">TailwindCSS, TypeScript, React components</p>
       </div>
       <div class="bg-accent rounded-lg p-4 text-white">
-        <p class="font-sans">Este es un ejemplo usando el color de acento</p>
+        <p class="font-sans font-bold">🚀 Listo para usar</p>
+        <p class="mt-2 font-sans">
+          Estructura de carpetas optimizada para proyectos web
+        </p>
       </div>
-      <Button variant="secondary">Click me</Button>
+      <Button variant="secondary">Explorar componentes</Button>
     </div>
 
-    <!-- Ejemplo de uso de fuentes personalizadas -->
+    <!-- Instrucciones de uso -->
     <div class="bg-background-alt mt-8 rounded-lg p-4 text-left">
-      <p class="mb-2 font-sans text-xl">Fuente Sans (Poppins)</p>
-      <p class="font-heading mb-2 text-xl">Fuente Heading (Montserrat)</p>
-      <p class="font-mono text-xl">Fuente Mono (Fira Code)</p>
+      <p class="mb-2 font-sans text-xl font-bold">Cómo empezar:</p>
+      <p class="mb-2 font-sans">
+        <span class="text-accent font-mono">docker-compose up</span> - Para desarrollo
+      </p>
+      <p class="mb-2 font-sans">
+        <span class="text-accent font-mono"
+          >docker-compose -f docker-compose.yaml up</span
+        > - Para producción
+      </p>
+      <p class="font-heading mt-4 mb-2 text-xl font-bold">
+        Personalizable y extensible
+      </p>
+      <p class="font-sans">
+        Modifica este template según las necesidades de tu proyecto
+      </p>
     </div>
   </main>
 </Layout>

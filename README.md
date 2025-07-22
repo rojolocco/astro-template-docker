@@ -1,23 +1,23 @@
 # 🚀 Astro Professional Template
 
-Un template profesional y moderno para proyectos web con **Astro**, **React**, **TypeScript** y **Tailwind CSS**.
+A professional and modern template for web projects with **Astro**, **React**, **TypeScript**, and **Tailwind CSS**.
 
-## ✨ Características
+## ✨ Features
 
-- **⚡ Astro 5.x** - Framework estático moderno para sitios web rápidos
-- **⚛️ React 19** - Componentes interactivos con hidratación selectiva
-- **📝 TypeScript** - Tipado estático completo para mejor desarrollo
-- **🎨 Tailwind CSS 4** - Framework CSS utility-first
-- **📱 Responsive Design** - Optimizado para todos los dispositivos
-- **🔍 SEO Optimizado** - Meta tags completos y estructura semántica
-- **♿ Accesible** - Componentes siguiendo las mejores prácticas de accesibilidad
-- **🎯 Performance** - Carga rápida y optimizada
-- **🔧 ESLint & Prettier** - Linting y formateo automático de código
-- **🪝 Husky** - Git hooks para calidad de código automática
-- **📦 Pnpm** - Gestor de paquetes rápido y eficiente
-- **🐳 Docker** - Contenedorización completa para desarrollo y producción
+- **⚡ Astro 5.x** - Modern static framework for fast websites
+- **⚛️ React 19** - Interactive components with selective hydration
+- **📝 TypeScript** - Full static typing for better development
+- **🎨 Tailwind CSS 4** - Utility-first CSS framework
+- **📱 Responsive Design** - Optimized for all devices
+- **🔍 SEO Optimized** - Complete meta tags and semantic structure
+- **♿ Accessible** - Components following accessibility best practices
+- **🎯 Performance** - Fast and optimized loading
+- **🔧 ESLint & Prettier** - Automatic code linting and formatting
+- **🪝 Husky** - Git hooks for automatic code quality
+- **📦 Pnpm** - Fast and efficient package manager
+- **🐳 Docker** - Complete containerization for development and production
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```plain
 /
@@ -25,249 +25,249 @@ Un template profesional y moderno para proyectos web con **Astro**, **React**, *
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   ├── ui/           # Componentes UI reutilizables
-│   │   ├── react/        # Componentes React
+│   │   ├── ui/           # Reusable UI components
+│   │   ├── react/        # React components
 │   │   ├── Header.astro
 │   │   └── Footer.astro
-│   ├── constants/        # Configuraciones y constantes
-│   ├── layouts/          # Layouts de páginas
-│   ├── lib/             # Utilidades y helpers
-│   ├── pages/           # Páginas del sitio
-│   ├── styles/          # Estilos globales
-│   └── types/           # Definiciones de TypeScript
+│   ├── constants/        # Configurations and constants
+│   ├── layouts/          # Page layouts
+│   ├── lib/             # Utilities and helpers
+│   ├── pages/           # Site pages
+│   ├── styles/          # Global styles
+│   └── types/           # TypeScript definitions
 ├── astro.config.mjs
 ├── package.json
 └── tsconfig.json
 ```
 
-## 🚀 Inicio Rápido
+## 🚀 Quick Start
 
-### Prerrequisitos
+### Prerequisites
 
 - Node.js 18+
-- pnpm (recomendado) o npm
+- pnpm (recommended) or npm
 
-### Instalación
+### Installation
 
-1. **Clona el repositorio**
+1. **Clone the repository**
 
    ```bash
-   git clone <tu-repositorio>
+   git clone <your-repository>
    cd astro-template-docker
    ```
 
-2. **Instala las dependencias**
+2. **Install dependencies**
 
    ```bash
    pnpm install
    ```
 
-3. **Inicia el servidor de desarrollo**
+3. **Start the development server**
 
    ```bash
    pnpm dev
    ```
 
-4. **Abre tu navegador**
+4. **Open your browser**
 
    ```plain
    http://localhost:3000
    ```
 
-## 📜 Scripts Disponibles
+## 📜 Available Scripts
 
 ```bash
-# Desarrollo
-pnpm dev          # Inicia el servidor de desarrollo
-pnpm preview      # Vista previa de la build de producción
+# Development
+pnpm dev          # Start the development server
+pnpm preview      # Preview the production build
 
-# Build y Deploy
-pnpm build        # Construye la aplicación para producción
-pnpm astro        # Comandos CLI de Astro
+# Build and Deploy
+pnpm build        # Build the application for production
+pnpm astro        # Astro CLI commands
 
-# Calidad de Código
-pnpm lint         # Ejecuta ESLint para encontrar problemas
-pnpm lint:fix     # Ejecuta ESLint y corrige problemas automáticamente
-pnpm format       # Formatea el código con Prettier
-pnpm format:check # Verifica el formato del código sin cambios
-pnpm type-check   # Verifica tipos TypeScript sin generar archivos
-pnpm check        # Verificación completa de Astro
+# Code Quality
+pnpm lint         # Run ESLint to find problems
+pnpm lint:fix     # Run ESLint and fix issues automatically
+pnpm format       # Format code with Prettier
+pnpm format:check # Verify code formatting without changes
+pnpm type-check   # Check TypeScript types without generating files
+pnpm check        # Complete Astro check
 ```
 
-## �️ Desarrollo
+## ⚙️ Development
 
-### Herramientas de Calidad de Código
+### Code Quality Tools
 
-Este template viene preconfigurado con herramientas profesionales para mantener la calidad del código:
+This template comes preconfigured with professional tools to maintain code quality:
 
 #### ESLint
 
-- **Configuración**: `eslint.config.js`
-- **Plugins incluidos**:
-  - `@typescript-eslint` - Reglas para TypeScript
-  - `eslint-plugin-react` - Reglas para React
-  - `eslint-plugin-react-hooks` - Reglas para React Hooks
-  - `eslint-plugin-jsx-a11y` - Reglas de accesibilidad
-  - `eslint-plugin-astro` - Reglas específicas para Astro
+- **Configuration**: `eslint.config.js`
+- **Included plugins**:
+  - `@typescript-eslint` - TypeScript rules
+  - `eslint-plugin-react` - React rules
+  - `eslint-plugin-react-hooks` - React Hooks rules
+  - `eslint-plugin-jsx-a11y` - Accessibility rules
+  - `eslint-plugin-astro` - Astro-specific rules
 
 #### Prettier
 
-- **Configuración**: `.prettierrc`
-- **Plugins incluidos**:
-  - `prettier-plugin-astro` - Formato para archivos .astro
-  - `prettier-plugin-tailwindcss` - Ordenamiento de clases Tailwind
+- **Configuration**: `.prettierrc`
+- **Included plugins**:
+  - `prettier-plugin-astro` - Formatting for .astro files
+  - `prettier-plugin-tailwindcss` - Tailwind class sorting
 
 #### Husky + lint-staged
 
-- **Pre-commit hooks** automáticos que ejecutan:
-  - ESLint con corrección automática
-  - Prettier para formateo
-  - Solo en archivos modificados (gracias a lint-staged)
+- **Automatic pre-commit hooks** that run:
+  - ESLint with automatic fixing
+  - Prettier for formatting
+  - Only on modified files (thanks to lint-staged)
 
-### Flujo de Desarrollo Recomendado
+### Recommended Development Workflow
 
-1. **Clona y configura**:
+1. **Clone and configure**:
 
    ```bash
-   git clone <tu-repo>
+   git clone <your-repo>
    cd astro-template-docker
    pnpm install
    ```
 
-2. **Desarrolla con calidad**:
+2. **Develop with quality**:
 
    ```bash
-   pnpm dev          # Servidor de desarrollo
-   pnpm lint         # Revisa tu código
-   pnpm format       # Formatea antes de commit
+   pnpm dev          # Development server
+   pnpm lint         # Review your code
+   pnpm format       # Format before commit
    ```
 
-3. **Los hooks automáticos** se encargan del resto al hacer commit
+3. **Automatic hooks** take care of the rest when committing
 
-### Extensiones Recomendadas de VS Code
+### Recommended VS Code Extensions
 
-El archivo `.vscode/extensions.json` incluye extensiones recomendadas:
+The `.vscode/extensions.json` file includes recommended extensions:
 
-- **Astro** - Soporte completo para archivos .astro
-- **Prettier** - Formateo automático
-- **ESLint** - Linting en tiempo real
-- **Tailwind CSS IntelliSense** - Autocompletado de clases
-- **TypeScript Hero** - Herramientas adicionales de TypeScript
+- **Astro** - Complete support for .astro files
+- **Prettier** - Automatic formatting
+- **ESLint** - Real-time linting
+- **Tailwind CSS IntelliSense** - Class autocompletion
+- **TypeScript Hero** - Additional TypeScript tools
 
-## �🔧 Configuración
+## 🔧 Configuration
 
-### Personalizar el sitio
+### Customize the site
 
-Edita el archivo `src/constants/site.ts` para configurar:
+Edit the `src/constants/site.ts` file to configure:
 
-- Información del sitio (nombre, descripción, URL)
-- Navegación principal y footer
-- Redes sociales
-- Configuración SEO
+- Site information (name, description, URL)
+- Main navigation and footer
+- Social media
+- SEO configuration
 
-### Componentes incluidos
+### Included Components
 
-#### Componentes UI (`src/components/ui/`)
+#### UI Components (`src/components/ui/`)
 
-- **Button** - Botón con múltiples variantes
-- **Card** - Tarjeta flexible para contenido
-- **Input** - Campo de entrada con validación
+- **Button** - Button with multiple variants
+- **Card** - Flexible content card
+- **Input** - Input field with validation
 
-#### Componentes React (`src/components/react/`)
+#### React Components (`src/components/react/`)
 
-- **Hero** - Sección hero personalizable
-- **Features** - Grid de características
-- **ContactForm** - Formulario de contacto funcional
+- **Hero** - Customizable hero section
+- **Features** - Features grid
+- **ContactForm** - Functional contact form
 
-### Utilidades
+### Utilities
 
-El archivo `src/lib/utils.ts` incluye:
+The `src/lib/utils.ts` file includes:
 
-- `cn()` - Combina clases de Tailwind CSS
-- `formatDate()` - Formato de fechas
-- `truncateText()` - Truncar texto
-- `slugify()` - Crear slugs desde texto
-- `debounce()` - Función debounce
+- `cn()` - Combines Tailwind CSS classes
+- `formatDate()` - Date formatting
+- `truncateText()` - Text truncation
+- `slugify()` - Create slugs from text
+- `debounce()` - Debounce function
 
-## 🎨 Personalización de Estilos
+## 🎨 Style Customization
 
 ### Tailwind CSS
 
-Este template usa **Tailwind CSS 4** con configuración optimizada. Los estilos están en:
+This template uses **Tailwind CSS 4** with optimized configuration. Styles are in:
 
-- `src/styles/global.css` - Estilos globales
-- Configuración en `astro.config.mjs`
+- `src/styles/global.css` - Global styles
+- Configuration in `astro.config.mjs`
 
-### Componentes
+### Components
 
-Todos los componentes usan clases de Tailwind CSS y pueden ser fácilmente personalizados.
+All components use Tailwind CSS classes and can be easily customized.
 
-## 📱 Páginas Incluidas
+## 📱 Included Pages
 
-- **Inicio** (`/`) - Página principal con hero y características
-- **Acerca** (`/about`) - Información sobre el proyecto
-- **Contacto** (`/contact`) - Formulario de contacto
+- **Home** (`/`) - Main page with hero and features
+- **About** (`/about`) - Project information
+- **Contact** (`/contact`) - Contact form
 
 ## 🔍 SEO
 
-El template incluye:
+The template includes:
 
-- Meta tags Open Graph
+- Open Graph meta tags
 - Twitter Cards
 - Structured data
-- Sitemap automático
-- URLs canónicas
+- Automatic sitemap
+- Canonical URLs
 
-## 📦 Tecnologías Utilizadas
+## 📦 Technologies Used
 
-| Tecnología     | Versión | Propósito                |
-| -------------- | ------- | ------------------------ |
-| Astro          | 5.12.1  | Framework principal      |
-| React          | 19.1.0  | Componentes interactivos |
-| TypeScript     | Latest  | Tipado estático          |
-| Tailwind CSS   | 4.1.11  | Estilos                  |
-| clsx           | 2.1.1   | Manejo de clases CSS     |
-| tailwind-merge | 3.3.1   | Combinación de clases    |
+| Technology     | Version | Purpose                |
+| -------------- | ------- | ---------------------- |
+| Astro          | 5.12.1  | Main framework         |
+| React          | 19.1.0  | Interactive components |
+| TypeScript     | Latest  | Static typing          |
+| Tailwind CSS   | 4.1.11  | Styles                 |
+| clsx           | 2.1.1   | CSS class management   |
+| tailwind-merge | 3.3.1   | Class combination      |
 
-## 🚀 Despliegue
+## 🚀 Deployment
 
 ### Netlify
 
 ```bash
 pnpm build
-# Subir la carpeta `dist` a Netlify
+# Upload the `dist` folder to Netlify
 ```
 
 ### Vercel
 
 ```bash
 pnpm build
-# Configurar Vercel para usar la carpeta `dist`
+# Configure Vercel to use the `dist` folder
 ```
 
-### Otros proveedores
+### Other providers
 
 ```bash
 pnpm build
-# Subir la carpeta `dist` generada
+# Upload the generated `dist` folder
 ```
 
-## 🤝 Contribución
+## 🤝 Contribution
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/amazing-feature`)
-3. Commit tus cambios (`git commit -m 'Add some amazing feature'`)
-4. Push a la rama (`git push origin feature/amazing-feature`)
-5. Abre un Pull Request
+1. Fork the project
+2. Create a branch for your feature (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+This project is under the MIT License. See the `LICENSE` file for more details.
 
-## 💡 Inspiración
+## 💡 Inspiration
 
-Este template está inspirado en las mejores prácticas de desarrollo web moderno y frameworks populares como Next.js, pero optimizado para el ecosistema de Astro.
+This template is inspired by modern web development best practices and popular frameworks like Next.js, but optimized for the Astro ecosystem.
 
 ---
 
-⭐ Si este template te fue útil, no olvides darle una estrella en GitHub!
+⭐ If this template was useful to you, don't forget to give it a star on GitHub!

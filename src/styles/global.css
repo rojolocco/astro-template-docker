@@ -2,13 +2,13 @@
 
 :root {
   /* Colores principales */
-  --color-primary: #3b82f6;
-  --color-secondary: #10b981;
-  --color-accent: #f59e0b;
-  --color-text: #1f2937;
-  --color-text-light: #6b7280;
+  --color-primary: #ffffff;
+  --color-secondary: #2563eb;
+  --color-accent: #000000;
+  --color-text: #000000;
+  --color-text-light: #4b5563;
   --color-background: #ffffff;
-  --color-background-alt: #f9fafb;
+  --color-background-alt: #f8fafc;
 
   /* Tipografía */
   --font-sans: 'Poppins', sans-serif;
@@ -42,9 +42,11 @@ pre {
 .text-primary {
   color: var(--color-primary);
 }
+
 .text-secondary {
   color: var(--color-secondary);
 }
+
 .text-accent {
   color: var(--color-accent);
 }
@@ -52,9 +54,11 @@ pre {
 .bg-primary {
   background-color: var(--color-primary);
 }
+
 .bg-secondary {
   background-color: var(--color-secondary);
 }
+
 .bg-accent {
   background-color: var(--color-accent);
 }
@@ -62,9 +66,11 @@ pre {
 .font-sans {
   font-family: var(--font-sans);
 }
+
 .font-heading {
   font-family: var(--font-heading);
 }
+
 .font-mono {
   font-family: var(--font-mono);
 }
