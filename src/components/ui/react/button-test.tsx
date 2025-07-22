@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import { COLORS } from '../../constants/theme';
+import { COLORS } from '../../../constants/theme';
 
 interface ButtonProps {
     children: React.ReactNode;
