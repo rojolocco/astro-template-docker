@@ -3,8 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: astro-app:latest
-    container_name: astro-app
+    image: astro-template-docker:latest
+    container_name: astro-template
     restart: unless-stopped
     ports:
       - "80:80"
